@@ -1,0 +1,1 @@
+class InValidNumberError(BaseException): pass

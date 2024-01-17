@@ -1,0 +1,18 @@
+# Write a python program which demonstrate the concept of relational operators
+
+a=int(input("Enter value of a:"))
+b=int(input("Enter value of b:"))
+print("-"*50)
+print("Relational Operation Results")
+print("-"*50)
+print("{}>{}={}".format(a,b,a>b))
+print("{}>{}={}".format(b,a,b>a))
+print("{}<{}={}".format(a,b,a<b))
+print("{}<{}={}".format(b,a,b<a))
+print("{}=={}={}".format(a,b,a==b))
+print("{}!={}={}".format(a,b,a!=b))
+print("{}>={}={}".format(a,b,a>=b))
+print("{}>={}={}".format(b,a,b>=a))
+print("{}<={}={}".format(a,b,a<=b))
+print("{}<={}={}".format(b,a,b<=a))
+print("-"*50)

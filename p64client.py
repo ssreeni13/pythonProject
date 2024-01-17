@@ -1,0 +1,13 @@
+import socket
+s=socket.socket()
+s.connect(("localhost",8000))
+print("-------------------------------------------")
+print("Client side program connected to Server side program...")
+print("-------------------------------------------")
+cdata=input("Enter a Message:")
+# s.send("Hai, Iam from Sreenivasan---Client".encode())
+s.send(cdata.encode())
+print("-------------------------------------------")
+sdata=s.recv(1024).decode()
+print("Data from Server at Client side={}".format(sdata))
+print("-------------------------------------------")

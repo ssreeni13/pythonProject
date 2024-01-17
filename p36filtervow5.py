@@ -1,0 +1,12 @@
+# this program which will accept a line of text and filter vowels and print their count
+s = input("Enter Line of Text:")
+vowels = list(filter(lambda ch: ch in ['a','e','i','o','u','A','E','I','O','U'],s))
+print("----------------------------------------------------------")
+print("Given line of Text={}".format(s))
+print("Vowels={}".format(vowels))
+print("No.of.Vowels={}".format(len(vowels)))
+print("----------------------------------------------------------")
+consonants = list(filter(lambda ch: ch not in ['a','e','i','o','u','A','E','I','O','U'] and not ch.isspace() and not ch.isdigit(),s))
+print("Consonants={}".format(consonants))
+print("No.of.Consonants={}".format(len(consonants)))
+print("----------------------------------------------------------")

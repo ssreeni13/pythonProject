@@ -1,0 +1,5 @@
+wp = open("addr.data","a")
+wp.write("Sreenivasan\n")
+wp.write("27,Mdu\n")
+wp.write("Bangalore\n")
+print("Data written to the file-->Verify")
